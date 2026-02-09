@@ -136,77 +136,50 @@ export default function App() {
         </div>
       </section>
 
-    {/* Contact Section */}
-      <section id="contact" className="py-32 bg-white relative">
-        <div className="max-w-7xl mx-auto px-6">
-           <div className="bg-indigo-600 rounded-[4rem] p-10 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-16 relative overflow-hidden shadow-2xl shadow-indigo-100">
-              <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full blur-[100px] -mr-40 -mt-40"></div>
-              
-              <div className="flex-1 text-center md:text-left text-white relative z-10">
-                 <h2 className="text-4xl md:text-7xl font-black mb-10 leading-[0.9] tracking-tighter uppercase italic">Sẵn Sàng <br/>Hợp Tác?</h2>
-                 <div className="space-y-10">
-                    <div className="flex items-center gap-6 justify-center md:justify-start">
-                       <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white border border-white/20 shadow-xl"><Phone className="w-7 h-7"/></div>
-                       <div>
-                          <p className="text-[10px] font-black uppercase tracking-[0.2em] opacity-60 mb-1">Zalo / Phone</p>
-                          <p className="text-3xl font-black tracking-tight">094 330 4685</p>
-                       </div>
-                    </div>
-                    <div className="flex items-center gap-6 justify-center md:justify-start">
-                       <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white border border-white/20 shadow-xl"><Mail className="w-7 h-7"/></div>
-                       <div>
-                          <p className="text-[10px] font-black uppercase tracking-[0.2em] opacity-60 mb-1">Email</p>
-                          <p className="text-2xl font-black italic">hiendoanvan25@gmail.com</p>
-                       </div>
-                    </div>
-                 </div>
-              </div>
+    {/* ================= CONTACT ================= */}
+<section id="contact" className="py-20 px-4 sm:px-6">
+  <div className="max-w-7xl mx-auto">
+    <div className="bg-indigo-600 rounded-3xl p-6 sm:p-10 flex flex-col lg:flex-row gap-10 text-white">
 
-              <div className="flex-1 w-full relative z-10">
-                 <div className="bg-white rounded-[3.5rem] p-10 md:p-14 shadow-3xl text-slate-900 text-center">
-                    <div className="w-20 h-20 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-10 shadow-inner"><MessageCircle className="w-10 h-10 text-indigo-600"/></div>
-                    <h3 className="text-3xl font-black mb-4 tracking-tight">Liên hệ ngay</h3>
-                    <p className="text-slate-400 text-sm mb-12 font-medium leading-relaxed max-w-xs mx-auto">Nhận tư vấn miễn phí về chiến lược Marketing & Website cho doanh nghiệp của bạn.</p>
-                    <a href="https://zalo.me/0943304685" target="_blank" className="block w-full py-6 bg-[#0068ff] text-white font-black rounded-3xl hover:bg-[#0052cc] transition-all shadow-xl shadow-blue-200 text-lg uppercase tracking-widest active:scale-95">
-                       CHAT QUA ZALO NGAY
-                    </a>
-                    <div className="mt-8 flex items-center justify-center gap-2">
-                      <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Cam kết bảo mật & chuyên nghiệp</span>
-                    </div>
-                 </div>
-              </div>
-           </div>
+      {/* LEFT */}
+      <div className="flex-1 text-center lg:text-left">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+          Sẵn sàng hợp tác?
+        </h2>
+
+        <div className="space-y-5">
+          <div className="flex items-center gap-3 justify-center lg:justify-start">
+            <Phone className="w-5 h-5" />
+            <span className="font-semibold">0943 30 4685</span>
+          </div>
+
+          <div className="flex items-center gap-3 justify-center lg:justify-start">
+            <Mail className="w-5 h-5" />
+            <span className="italic break-all">
+              hiendoanvan25@gmail.com
+            </span>
+          </div>
         </div>
-      </section>
+      </div>
 
-      {/* Footer */}
-      <footer className="py-16 border-t border-slate-100 text-center bg-white">
-         <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">© {new Date().getFullYear()} ĐOÀN ĐÌNH HIỂN • REMOTE MARKETING & WEBSITE PARTNER</p>
-      </footer>
+      {/* RIGHT */}
+      <div className="flex-1 bg-white text-slate-900 rounded-2xl p-6 sm:p-10 text-center">
+        <MessageCircle className="w-10 h-10 text-indigo-600 mx-auto mb-4" />
+        <h3 className="text-xl font-bold mb-3">Liên hệ ngay</h3>
+        <p className="text-slate-600 text-sm mb-6">
+          Nhận tư vấn miễn phí Marketing & Website cho doanh nghiệp của bạn.
+        </p>
 
-      {/* Floating Action Button */}
-      <div className="fixed bottom-8 right-8 z-[999]">
-        <a href="https://zalo.me/0943304685" target="_blank" className="w-16 h-16 bg-[#0068ff] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all animate-bounce-slow active:scale-90">
-           <MessageCircle className="w-8 h-8" />
+        <a
+          href="https://zalo.me/0943304685"
+          target="_blank"
+          className="block w-full py-3 bg-[#0068ff] text-white font-bold rounded-xl"
+        >
+          Chat Zalo ngay
         </a>
       </div>
 
-      <style>{`
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        .animate-bounce-slow {
-          animation: bounce-slow 4s ease-in-out infinite;
-        }
-        .shadow-3xl {
-          box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.08);
-        }
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
     </div>
-  );
-}
+  </div>
+</section>
+
