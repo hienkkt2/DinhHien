@@ -209,7 +209,7 @@ export default function App() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* ====================Mobile Menu =====================*/}
         <div className={`md:hidden absolute top-full left-0 w-full bg-white shadow-2xl transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
           <div className="p-6 space-y-1">
             {menuItems.map((item) => (
@@ -227,7 +227,7 @@ export default function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* =========================Hero Section==================== */}
       <section id="intro" className="pt-40 pb-20 md:pt-60 md:pb-32 relative overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
@@ -287,7 +287,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* ========================Services Section=================== */}
       <section id="services" className="py-32 bg-slate-50 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center md:text-left mb-20">
@@ -342,7 +342,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Portfolio Section */}
+      {/*=================== Portfolio Section================== */}
       <section id="portfolio" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center md:text-left mb-20">
@@ -379,7 +379,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/*==================== Process Section================== */}
       <section id="process" className="py-32 bg-slate-900 text-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-24">
@@ -405,7 +405,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* ==================Contact Section =====================*/}
       <section id="contact" className="py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-6">
            <div className="bg-indigo-600 rounded-[4rem] p-10 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-16 relative overflow-hidden shadow-2xl shadow-indigo-100">
@@ -449,12 +449,12 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/*======================== Footer========================= */}
       <footer className="py-16 border-t border-slate-100 text-center bg-white">
          <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">© {new Date().getFullYear()} ĐOÀN ĐÌNH HIỂN • REMOTE MARKETING & WEBSITE PARTNER</p>
       </footer>
 
-      {/* Floating Action Button */}
+      {/* ==================Floating Action Button================= */}
       <div className="fixed bottom-8 right-8 z-[999]">
         <a href="https://zalo.me/0943304685" target="_blank" className="w-16 h-16 bg-[#0068ff] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all animate-bounce-slow active:scale-90">
            <MessageCircle className="w-8 h-8" />
