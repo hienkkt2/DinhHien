@@ -163,7 +163,7 @@ export default function App() {
       problem: "Website không có traffic tự nhiên, chi phí chạy ads ngày càng đắt đỏ.",
       solution: "Phân tích bộ từ khóa ngành, viết SEO content, tối ưu Technical & Backlink.",
       result: "Hơn 30 từ khóa lọt Top 10 Google sau 4 tháng, traffic tăng trưởng bền vững.",
-      img: "https://images.unsplash.com/photo-1551288049-bbbda5366392?q=80&w=1200&auto=format&fit=crop"
+      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHNeIerBpYkaAfDLMIFpprD7YiX_j1COpIXxiNXg3oypb0MD_P3F4LVsa6jF3MojgRXngsFSQ8iAm6ks2W_cxuw60rnIFyxsCQBQTYvckN94RtcxnDwxggD-mczMpFj7YOj4ZNMmz1ZWuWCWXmSdB_i92vtxALMEdlN2RPPNCTdrUro41tAKEUWALhFcdP/s2000/615428720_122196431942497724_2189783525187936915_n.jpg"
     },
     {
       title: "Case 4: Facebook Ads Chuyển Đổi",
