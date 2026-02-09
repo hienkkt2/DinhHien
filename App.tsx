@@ -405,136 +405,62 @@ export default function App() {
         </div>
       </section>
 
-      import { Phone, Mail, MessageCircle, ShieldCheck } from "lucide-react";
-
-export default function ContactSection() {
-  return (
-    <>
-      {/* ================== Contact Section ===================== */}
-      <section id="contact" className="py-20 md:py-32 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div
-            className="bg-indigo-600 rounded-3xl md:rounded-[4rem]
-            p-6 sm:p-10 md:p-24
-            flex flex-col lg:flex-row
-            items-center justify-between gap-12
-            relative overflow-hidden
-            shadow-2xl shadow-indigo-100"
-          >
-            {/* Glow */}
-            <div className="absolute top-0 right-0 w-60 h-60 md:w-80 md:h-80 bg-white/10 rounded-full blur-[100px] -mr-32 -mt-32" />
-
-            {/* LEFT */}
-            <div className="flex-1 text-center lg:text-left text-white relative z-10">
-              <h2
-                className="text-3xl sm:text-4xl md:text-7xl
-                font-black mb-8 md:mb-10
-                leading-tight md:leading-[0.9]
-                tracking-tighter uppercase italic"
-              >
-                Sẵn Sàng <br /> Hợp Tác?
-              </h2>
-
-              <div className="space-y-8 md:space-y-10">
-                {/* Phone */}
-                <div className="flex items-center gap-4 md:gap-6 justify-center lg:justify-start">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/20 shadow-xl">
-                    <Phone className="w-5 h-5 md:w-7 md:h-7" />
-                  </div>
-                  <div>
-                    <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">
-                      Zalo / Phone
-                    </p>
-                    <p className="text-xl md:text-3xl font-black tracking-tight">
-                      094 330 4685
-                    </p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-center gap-4 md:gap-6 justify-center lg:justify-start">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/20 shadow-xl">
-                    <Mail className="w-5 h-5 md:w-7 md:h-7" />
-                  </div>
-                  <div className="max-w-[260px]">
-                    <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">
-                      Email
-                    </p>
-                    <p className="text-base md:text-2xl font-black italic break-all">
-                      hiendoanvan25@gmail.com
-                    </p>
-                  </div>
-                </div>
+      {/* =======================Contact Section=================== */}
+      <section id="contact" className="py-32 bg-white relative">
+        <div className="max-w-7xl mx-auto px-6">
+           <div className="bg-indigo-600 rounded-[4rem] p-10 md:p-24 flex flex-col lg:flex-row items-center justify-between gap-16 relative overflow-hidden shadow-2xl shadow-indigo-100">
+              <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full blur-[100px] -mr-40 -mt-40"></div>
+              
+              <div className="flex-1 text-center md:text-left text-white relative z-10">
+                 <h2 className="text-4xl md:text-7xl font-black mb-10 leading-[0.9] tracking-tighter uppercase italic">Sẵn Sàng <br/>Hợp Tác?</h2>
+                 <div className="space-y-10">
+                    <div className="flex items-center gap-6 justify-center md:justify-start">
+                       <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white border border-white/20 shadow-xl"><Phone className="w-7 h-7"/></div>
+                       <div>
+                          <p className="text-[10px] font-black uppercase tracking-[0.2em] opacity-60 mb-1">Zalo / Phone</p>
+                          <p className="text-3xl font-black tracking-tight">094 330 4685</p>
+                       </div>
+                    </div>
+                    <div className="flex items-center gap-6 justify-center md:justify-start">
+                       <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white border border-white/20 shadow-xl"><Mail className="w-7 h-7"/></div>
+                       <div>
+                          <p className="text-[10px] font-black uppercase tracking-[0.2em] opacity-60 mb-1">Email</p>
+                          <p className="text-2xl font-black italic">hiendoanvan25@gmail.com</p>
+                       </div>
+                    </div>
+                 </div>
               </div>
-            </div>
 
-            {/* RIGHT */}
-            <div className="flex-1 w-full relative z-10">
-              <div
-                className="bg-white rounded-2xl sm:rounded-3xl md:rounded-[3.5rem]
-                p-6 sm:p-10 md:p-14
-                shadow-3xl text-slate-900 text-center"
-              >
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-8 md:mb-10 shadow-inner">
-                  <MessageCircle className="w-8 h-8 md:w-10 md:h-10 text-indigo-600" />
-                </div>
-
-                <h3 className="text-2xl md:text-3xl font-black mb-3 md:mb-4 tracking-tight">
-                  Liên hệ ngay
-                </h3>
-
-                <p className="text-slate-400 text-sm mb-8 md:mb-12 font-medium leading-relaxed max-w-xs mx-auto">
-                  Nhận tư vấn miễn phí về chiến lược Marketing & Website cho doanh nghiệp của bạn.
-                </p>
-
-                <a
-                  href="https://zalo.me/0943304685"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-4 md:py-6 bg-[#0068ff] text-white font-black
-                  rounded-2xl md:rounded-3xl
-                  hover:bg-[#0052cc] transition-all
-                  shadow-xl shadow-blue-200
-                  text-sm md:text-lg uppercase tracking-widest
-                  active:scale-95"
-                >
-                  CHAT QUA ZALO NGAY
-                </a>
-
-                <div className="mt-6 md:mt-8 flex items-center justify-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                  <span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                    Cam kết bảo mật & chuyên nghiệp
-                  </span>
-                </div>
+              <div className="flex-1 w-full relative z-10">
+                 <div className="bg-white rounded-[3.5rem] p-10 md:p-14 shadow-3xl text-slate-900 text-center">
+                    <div className="w-20 h-20 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-10 shadow-inner"><MessageCircle className="w-10 h-10 text-indigo-600"/></div>
+                    <h3 className="text-3xl font-black mb-4 tracking-tight">Liên hệ ngay</h3>
+                    <p className="text-slate-400 text-sm mb-12 font-medium leading-relaxed max-w-xs mx-auto">Nhận tư vấn miễn phí về chiến lược Marketing & Website cho doanh nghiệp của bạn.</p>
+                    <a href="https://zalo.me/0943304685" target="_blank" className="block w-full py-6 bg-[#0068ff] text-white font-black rounded-3xl hover:bg-[#0052cc] transition-all shadow-xl shadow-blue-200 text-lg uppercase tracking-widest active:scale-95">
+                       CHAT QUA ZALO NGAY
+                    </a>
+                    <div className="mt-8 flex items-center justify-center gap-2">
+                      <ShieldCheck className="w-4 h-4 text-emerald-500" />
+                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Cam kết bảo mật & chuyên nghiệp</span>
+                    </div>
+                 </div>
               </div>
-            </div>
-          </div>
+           </div>
         </div>
       </section>
 
-      {/* ================== Footer ===================== */}
+      {/* ========================Footer===================== */}
       <footer className="py-16 border-t border-slate-100 text-center bg-white">
-        <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">
-          © {new Date().getFullYear()} ĐOÀN ĐÌNH HIỂN • REMOTE MARKETING & WEBSITE PARTNER
-        </p>
+         <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">© {new Date().getFullYear()} ĐOÀN ĐÌNH HIỂN • REMOTE MARKETING & WEBSITE PARTNER</p>
       </footer>
 
-      {/* ================== Floating Zalo Button ================== */}
-      <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[999]">
-        <a
-          href="https://zalo.me/0943304685"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 md:w-16 md:h-16 bg-[#0068ff] text-white rounded-full
-          flex items-center justify-center shadow-2xl
-          hover:scale-110 transition-all animate-bounce-slow active:scale-90"
-        >
-          <MessageCircle className="w-6 h-6 md:w-8 md:h-8" />
+      {/* =======================Floating Action Button========================= */}
+      <div className="fixed bottom-8 right-8 z-[999]">
+        <a href="https://zalo.me/0943304685" target="_blank" className="w-16 h-16 bg-[#0068ff] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all animate-bounce-slow active:scale-90">
+           <MessageCircle className="w-8 h-8" />
         </a>
       </div>
 
-      {/* ================== Custom Styles ================== */}
       <style>{`
         @keyframes bounce-slow {
           0%, 100% { transform: translateY(0); }
@@ -550,6 +476,6 @@ export default function ContactSection() {
           scroll-behavior: smooth;
         }
       `}</style>
-    </>
+    </div>
   );
 }
