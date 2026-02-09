@@ -265,7 +265,7 @@ export default function App() {
             <div className="flex-1 w-full max-w-lg md:max-w-none relative">
               <div className="relative aspect-[4/5] rounded-[3.5rem] overflow-hidden shadow-3xl border-[12px] border-white ring-1 ring-slate-100 rotate-2 hover:rotate-0 transition-all duration-700 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F772ec6f3-f1ff-404b-b434-15d8bfcd2338%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4QTG2PSHUB%252F20260209%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20260209T074939Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dd885952d808e74fb69e8f9167aee5bbcd629a6a58f7cbfa7596ea890cac35aa2&sign=YAg8TUbzjWKoM9lRNkWJPoJsMeQGhwW4aPh0dQf8MsA" 
                   alt="Đoàn Đình Hiển" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" 
                 />
